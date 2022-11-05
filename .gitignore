@@ -1,0 +1,10 @@
+.vscode
+*.exe
+*.ilk
+*.obj
+*.pdb
+/.vs/slnx.sqlite
+/.vs/Beautiful C++ 14 STL Algorithms/v16/Browse.VC.opendb
+/.vs/Beautiful C++ 14 STL Algorithms/v16/Browse.VC.db-wal
+/.vs/Beautiful C++ 14 STL Algorithms/v16/Browse.VC.db-shm
+/.vs/Beautiful C++ 14 STL Algorithms/v16/Browse.VC.db
