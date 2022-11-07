@@ -30,6 +30,8 @@ int main()
     {
         inputs.push_back(rand() % 10 + 1);
     };
+    {
+
     // // for(uint64_t i:inputs)std::cout<<i<<" ";
     // printf("\n");
     // std::cout << "sizeof inputs vector : " << inputs.size() << "\n";
@@ -42,6 +44,7 @@ int main()
     // std::cout<<"oddds in inputs vector : "<<odd<<"\n";
     // uint64_t even{static_cast<uint64_t>(std::count_if(std::begin(inputs),std::end(inputs),isEven))};
     // std::cout<<"even in inputs vector : "<<even<<"\n";
+    }
     std::vector<std::string> words{};
     std::string line{"hello do you know c++ or you are python lover???"};
     auto it = std::begin(line);
@@ -50,7 +53,7 @@ int main()
         auto begin_itr = it;
         it = std::find(it, std::end(line), ' ');
         if (it != std::end(line))
-            *it = ',';
+            *(it) = ',';
         words.push_back(line.substr(begin_itr - std::begin(line), (it - begin_itr)));
     };
     printVector(words);
@@ -62,7 +65,7 @@ int main()
         auto begin_itr = it;
         it = std::find(it, std::end(line), ',');
         if (it != std::end(line))
-            *it = ' ';
+            *it ='.';
         words.push_back(line.substr(begin_itr - std::begin(line), it - begin_itr));
     };
     printVector(words);
